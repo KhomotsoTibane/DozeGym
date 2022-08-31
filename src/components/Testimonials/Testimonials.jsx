@@ -1,7 +1,7 @@
 import React,{useState} from "react"
 import { motion } from "framer-motion"
 import "./Testimonials.css"
-import {testimonialsData} from "../../data/testimonialData"
+import testimonialsData from "../../data/testimonialData"
 import RightArrow from "../../assets/rightArrow.png"
 import LeftArrow from "../../assets/leftArrow.png"
 import {AiOutlineArrowRight, AiOutlineArrowLeft} from "react-icons/ai"

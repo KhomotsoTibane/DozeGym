@@ -1,5 +1,5 @@
 import React from "react"
-import { plansData } from "../../data/plansData"
+import plansData from "../../data/plansData"
 import Tick from "../../assets/whiteTick.png"
 import "./Plans.css"
 

@@ -1,7 +1,7 @@
 import React from "react"
 import "./Programs.css"
 import RightArrow from "../../assets/rightArrow.png"
-import {programsData} from "../../data/programsData"
+import programsData from "../../data/programsData"
 
 const Programs = () => {
   return (
