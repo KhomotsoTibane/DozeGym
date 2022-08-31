@@ -1,0 +1,52 @@
+footer{
+    position: relative;
+}
+
+footer>hr{
+    border: 1px solid var(--lightgray);
+}
+
+.container{
+    padding: .75rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap:4rem;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+}
+
+.social-links{
+    display: flex;
+    gap:4rem;
+}
+
+.social-links>a>svg{
+    width: 2rem;
+    height: 2rem;
+    color:white;
+    cursor: pointer;
+}
+.social-links>a>:hover{
+   color: var(--orange);
+}
+
+.footer-text>p{
+    color: white;
+}
+
+.blur-footer-1{
+    width: 20rem;
+    height: 6rem;
+    bottom:0;
+    right: 20%;
+    background: red;
+}
+
+.blur-footer-2{
+    width: 20rem;
+    height: 6rem;
+    bottom:0;
+    left: 20%;
+    background: rgb(255, 115, 0);
+}

@@ -1,0 +1,138 @@
+.testimonials{
+    padding: 0 2rem;
+    display: flex;
+    gap:1rem;
+}
+
+.testimonials-left{
+    display: flex;
+    flex:1 1;
+    gap:2rem;
+    flex-direction:column;
+    text-transform: uppercase;
+    color: white;
+}
+
+.testimonials-left>:nth-child(1){
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.testimonials-left>:nth-child(2),
+.testimonials-left>:nth-child(3){
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.testimonials-left>:nth-child(4){
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+.testimonials-left>:nth-child(5)>svg{
+    margin-left: 20px;
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+.testimonials-right{
+    flex: 1;
+    position: relative;
+}
+
+.testimonials-right>:nth-child(1){
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    border: 2px solid var(--orange);
+    background: transparent;
+    right: 9rem;
+    top:0.9rem;
+    transition: var(--transition);
+}
+
+.testimonials-right>:nth-child(2){
+    position: absolute;
+    width: 17rem;
+    height: 19rem;
+    background: var(--planCard);
+    right: 7rem;
+    top:4rem;
+    transition: var(--transition);
+}
+
+.testimonials-right>img{
+    position: absolute;
+    object-fit: cover;
+    width: 17rem;
+    height: 20rem;
+    right:8rem;
+    top:2rem;
+    transition: var(--transition);
+}
+
+.testimonials-right:hover .testimonials-right-3{
+ top:0.9rem;
+ right: 9rem;
+}
+
+.testimonials-right:hover  .testimonials-right-2 {
+    display: none;
+   }
+
+.arrows{
+    display:none;
+    gap: 1rem;
+    position: absolute; 
+    bottom: 1rem;
+    left: 3rem;
+}
+
+.arrows>svg{
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .testimonials{
+        flex-direction: column;
+    }
+    .testimonials-left>:nth-child(2)
+    ,.testimonials-left>:nth-child(3){
+        font-size: xx-large;
+    }
+
+    .testimonials-left>:nth-child(5)>svg{
+        display: none;
+    }
+    .arrows{
+        display:flex;
+    }
+    
+    .testimonials-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .testimonials-right>div{
+        position:relative;
+        display:none;
+    }
+    .testimonials-right>img{
+        top: 0;
+        right: 0;
+        position:relative;
+        align-self: center;
+    }
+    .testimonials-right>:last-child{
+        display: block;
+        bottom: 0;
+        left: 0;
+    }
+    
+}
